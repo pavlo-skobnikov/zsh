@@ -39,9 +39,9 @@ export PATH="$PATH:$HOME/public-scripts"                                        
 export PATH="$PATH:$HOME/private-scripts"                                       # Private scripts.
 
 # Add CLI configuration.
-export EDITOR='nvim'
+export EDITOR='hx'
 export PAGER='less'
-export MANPAGER='nvim +Man!'
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
 
 # Set up Java and Maven PATHs via SDKMAN
