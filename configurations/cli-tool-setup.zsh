@@ -8,8 +8,10 @@ export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'"
 
 ## ngrok setup.
-# Add ngrok completion.
-eval "$(ngrok completion)"
+# Add ngrok completion only if ngrok is present.
+if [ -x "$(command -v ngrok)" ]; then
+  eval "$(ngrok completion)"
+fi
 
 ## SDKMan! setup.
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
