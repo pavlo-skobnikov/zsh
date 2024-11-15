@@ -39,7 +39,7 @@ export PATH="$PATH:$HOME/public-scripts"                                        
 export PATH="$PATH:$HOME/private-scripts"                                       # Private scripts.
 
 # Add CLI configuration.
-export EDITOR='hx'
+export EDITOR='vim'
 export PAGER='less'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
