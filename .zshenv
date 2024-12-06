@@ -38,8 +38,10 @@ export PATH="$PATH:$HOME/.cargo/env"                                            
 export PATH="$PATH:$HOME/public-scripts"                                        # Public scripts.
 export PATH="$PATH:$HOME/private-scripts"                                       # Private scripts.
 
+export XDG_CONFIG_HOME="$HOME/.config/"
+
 # Add CLI configuration.
-export EDITOR='vim'
+export EDITOR='hx'
 export PAGER='less'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
