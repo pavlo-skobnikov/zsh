@@ -24,4 +24,7 @@ setopt HIST_SAVE_NO_DUPS      # Don't write duplicate entries in the history fil
 setopt HIST_REDUCE_BLANKS     # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY            # Don't execute immediately upon history expansion.
 
+# Help nushell look for its configuration files.
 export XDG_CONFIG_HOME="$HOME/.config/"
+# Source homebrew-installed applications.
+export PATH="/opt/homebrew/bin:$PATH"
