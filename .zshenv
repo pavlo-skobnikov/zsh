@@ -24,40 +24,4 @@ setopt HIST_SAVE_NO_DUPS      # Don't write duplicate entries in the history fil
 setopt HIST_REDUCE_BLANKS     # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY            # Don't execute immediately upon history expansion.
 
-# Add PATHs.
-export PATH="$HOME/.local/bin":$PATH                                            # User-installed binaries.
-export PATH=$HOME/.cargo/bin:$PATH                                              # Rust-installed binaries.
-export PATH="$HOME/go/bin":$PATH                                                # Go-installed binaries.
-export PATH="$PATH:$HOME/Library/Application Support/Coursier/bin"              # Scala Coursier.
-export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"                  # Add GNU coreutils to the PATH.
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"                    # Add GNU sed to the PATH.
-export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS/":$PATH             # IntelliJ IDEA.
-export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts" # JetBrains Toolbox.
-export PATH="$PATH:$HOME/.cargo/bin"                                            # Rust toolkit.
-export PATH="$PATH:$HOME/.cargo/env"                                            # Rust environment.
-export PATH="$PATH:$HOME/public-scripts"                                        # Public scripts.
-export PATH="$PATH:$HOME/private-scripts"                                       # Private scripts.
-
 export XDG_CONFIG_HOME="$HOME/.config/"
-
-# Add CLI configuration.
-export EDITOR='hx'
-export PAGER='less'
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANWIDTH=999
-
-# Set up Java and Maven PATHs via SDKMAN
-export JAVA_HOME=$HOME/.sdkman/candidates/java/current
-export M2_HOME=$HOME/.sdkman/candidates/maven/current
-
-# Set bat theme.
-export BAT_THEME="base16"
-
-# SDKMan!
-export SDKMAN_DIR="$HOME/.sdkman"
-
-# Set karabiner configuration path for goku.
-export GOKU_EDN_CONFIG_FILE="$HOME/.config/karabiner/karabiner.edn"
-
-# Source the secret exports.
-source "$HOME/secrets/secret_exports.zsh"
